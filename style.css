@@ -1,0 +1,84 @@
+
+body {
+    background-color: #FFD4AA;
+}
+
+#fundo {
+    width: 280px;
+    height: 270px;
+    position: absolute;
+    left: 232px;
+    top: 332px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px;
+}
+
+h1 {
+    font-size: 80px;
+    position: absolute;
+    left: 242px;
+    color: #FFAB57;
+    top: 100px;
+    text-shadow: 1px 1px 4px
+    margin: 20px;
+}
+
+.border {
+    background: #ffffff;
+    box-shadow: 0px 4px
+    9px black;
+    height: 180%;
+    width: 160px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    animation: 1s vindo;
+}
+
+@keyframes vindo {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(100);
+    }
+}
+
+header {
+    color: white;
+    width: 100%;
+    position: absolute;
+    left: 272;
+    font-size: 30px;
+}
+
+#cmc {
+    background: #FFAB57;
+    border: 0px;
+    cursor: pointer;
+    width: 220px;
+    height: 70px;
+    position: absolute;
+    left: 263px;
+    top: 642px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px;
+    transition: 1s, opacity 2s;
+    animation: go-back 1s;
+}
+
+#cmc:active {
+    box-shadow: 0px 0px 10px black;
+    transform: translateX(10px) scale(1.2);
+    opacity: 10%;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
